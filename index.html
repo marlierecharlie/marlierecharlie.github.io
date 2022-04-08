@@ -11,23 +11,38 @@
 
 <body>
 
-    <nav>
 
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-
-    </nav>
 
     <header>
+        <nav>
+
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+
         <img src="img/fondParalax.jpg" alt="ciel au couchant" id="ciel">
 
-        <section class="titreHome">
+        <section id="titreHome">
             <h1>Charlie Marlière</h1>
             <h2>Développeuse Intégratrice d'Applications Web</h2>
+            <div class="mouse_scroll">
+
+                <div>
+
+                    <a href="#presentationHome">
+                        <span class="m_scroll_arrows unu"></span>
+                        <span class="m_scroll_arrows doi"></span>
+                        <span class="m_scroll_arrows trei"></span>
+                    </a>
+                </div>
+            </div>
+
+
         </section>
 
         <img src="img/herbesParalax.png" alt="champs de mais" id="herbes">
@@ -37,48 +52,31 @@
 
 
         <h2 id="bienvenueTitre">Yolo!</h2>
-        <article>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quas adipisci beatae sit quasi fuga explicabo
-            voluptatibus! In tempora dolore, sed, vitae facere sint perspiciatis sunt dolorum similique assumenda non.
-            Quis voluptatum architecto recusandae sapiente fugit cum aut nisi ratione minima nulla dolor harum,
-            laudantium at optio, tempore, dolore nemo saepe quidem! Aspernatur amet fugiat est excepturi quod
-            voluptatibus expedita!
-            Ea autem eius sit esse ratione libero eligendi nostrum et quos iste dolorem, odit, nesciunt tempora soluta
-            adipisci! Vel iste omnis minima quam non odio expedita dolores voluptate, explicabo animi.
-            Iure reprehenderit unde ipsum, nisi modi tenetur aut ab tempora exercitationem at doloremque eaque
-            architecto! Ipsum, illum voluptates officiis deleniti omnis consequatur blanditiis repudiandae doloribus
-            iusto alias culpa atque rem.
-            Nostrum dicta corporis corrupti neque minus animi sit laborum quis minima natus ab, nihil, atque enim
-            commodi quos vel dolore maiores sed qui ullam ratione. Quam accusamus velit maxime voluptatum.
-            Atque quidem voluptate, error ad neque minima officia, nesciunt beatae quas eos tempora eveniet! Voluptates
-            asperiores, atque vitae pariatur possimus velit rerum, nam accusamus vero, dolore laboriosam quibusdam
-            recusandae non!
-            Dolorum modi, soluta dolore autem obcaecati distinctio unde quia cum, ullam debitis, illo natus animi sed
-            vero minus qui error! Maiores, iste dolorem similique totam minus iusto quo nostrum in.
-            Fugit quo alias suscipit. Aspernatur, fugiat perferendis sint dolore debitis reprehenderit accusantium sequi
-            deleniti repudiandae eius praesentium voluptatum tempore aut mollitia quibusdam atque hic voluptate. Alias
-            aliquid vel minima iste?
-            Consequuntur voluptate, aliquid omnis incidunt cum rem veritatis neque maxime officia magni! Atque ea eum
-            voluptatum, illum voluptatibus nulla dolor nihil quo tempora ullam reprehenderit libero cumque temporibus
-            repellat inventore!
-            Alias qui ipsum amet hic tenetur harum, minima nulla magni sunt a molestiae quibusdam praesentium quis
-            repudiandae veritatis recusandae veniam autem corrupti earum adipisci omnis impedit quaerat explicabo?
-            Quaerat, libero.
+        <article id="presentationHome">
+                Bienvenue sur mon portfolio, après avoir suivi une formation de développeuse intégratrice web, je souhaite poursuivre dans le domaine de l’IA. 
+            Cette première formation a été l’occasion de comprendre les bases du web. 
+            Des questions, envie d’échanger? Contactez-moi! 
 
         </article>
 
     </main>
 
     <script>
-        let ciel = document.getElementById('ciel')
         let titreHome = document.getElementById('titreHome')
-        let herbes = document.getElementById('herbes')
 
-        window.addEventListener('scroll', function(){
+        window.addEventListener('scroll', function () {
             let value = window.scrollY
-            // ciel.style.left = value* 0.25 + 'px';
-           titreHome.style.top = value * 2 + 'px';
+            if (value * 2 >= 400) {
+                titreHome.style.display = 'none';
+
+            } else {
+                titreHome.style.top = value * 2 + 'px';
+                titreHome.style.display = 'block';
+            }
+            console.log(value * 2)
+
         })
+
     </script>
 </body>
 
