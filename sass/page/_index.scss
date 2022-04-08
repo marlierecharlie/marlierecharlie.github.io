@@ -4,6 +4,7 @@ html {
     
     
     font-family: 'Poppins';
+    scroll-behavior: smooth;
 
     body {
         width: 100%;
@@ -32,7 +33,7 @@ html {
                 object-fit: cover;
             }
 
-            .titre
+            .titreHome
             {
                 position: absolute;
                 z-index: 10;
@@ -41,10 +42,15 @@ html {
                 text-shadow: 1px 1px 2px rgb(17, 16, 16);
                 // font-size: 7.5vw;
                 font-size: 1.5em;
+                transform: translate(100px);
 
             }
+
+            #herbes{
+                z-index: 20;
+            }
         }
-        section::before{
+        header::before{
             content: '';
             position: absolute;
             bottom: 0;
@@ -53,6 +59,23 @@ html {
             height: 100px;
             background: linear-gradient(to top,#181306 , transparent);
             z-index: 1000;
+        }
+
+        #mainIndex{
+            position: relative;
+            padding: 100px;
+
+            #bienvenueTitre{
+                font-size: 3.5em;
+                color: white;
+                margin-bottom: 10px;
+            }
+
+            article{
+                font-size: 1.2em;
+                color: white;
+                text-align: justify;
+            }
         }
     }
 }
