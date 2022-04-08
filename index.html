@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -41,7 +42,13 @@
                     </a>
                 </div>
             </div>
+            <!-- <article id="presentationHome">
+                        Bienvenue sur mon portfolio, après avoir suivi une formation de développeuse intégratrice web,
+                        je souhaite poursuivre dans le domaine de l’IA.
+                        Cette première formation a été l’occasion de comprendre les bases du web.
+                        Des questions, envie d’échanger? Contactez-moi!
 
+                    </article> -->
 
         </section>
 
@@ -51,33 +58,43 @@
     <main id="mainIndex">
 
 
-        <h2 id="bienvenueTitre">Yolo!</h2>
-        <article id="presentationHome">
-                Bienvenue sur mon portfolio, après avoir suivi une formation de développeuse intégratrice web, je souhaite poursuivre dans le domaine de l’IA. 
-            Cette première formation a été l’occasion de comprendre les bases du web. 
-            Des questions, envie d’échanger? Contactez-moi! 
+        <h2 id="bienvenueTitre">Présentation</h2>
 
-        </article>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=2);">
+                    <h2>hello</h2>
+                </div>
+                <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?);">
+                    <h2>hello</h2>
+                </div>
+                <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=3);">
+                    <h2>hello</h2>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <section id="contact">
+
+        </section>
 
     </main>
-
-    <script>
-        let titreHome = document.getElementById('titreHome')
-
-        window.addEventListener('scroll', function () {
-            let value = window.scrollY
-            if (value * 2 >= 400) {
-                titreHome.style.display = 'none';
-
-            } else {
-                titreHome.style.top = value * 2 + 'px';
-                titreHome.style.display = 'block';
-            }
-            console.log(value * 2)
-
-        })
-
-    </script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    
 </body>
 
 </html>
