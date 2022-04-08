@@ -11,46 +11,8 @@ html {
         background: linear-gradient(#181306, #2B1A0B);
         width: 100%;
 
+        
         header {
-            position: absolute;
-            // top: 0;
-            // left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
-            margin-left: 10px;
-            margin-right: 10px;
-            align-items: center;
-            z-index: 10;
-
-            ul {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                li {
-                    list-style-type: none;
-                    margin-left: 20px;
-
-                    a {
-                        text-decoration: none;
-                        padding: 6px 15px;
-                        color: white;
-                        border-radius: 20px;
-                    }
-
-                    a:hover,
-                    a.active {
-                        background: white;
-                        color: #181306;
-                    }
-                }
-
-            }
-
-        }
-
-        section {
 
             position: relative;
             top: 30%;
