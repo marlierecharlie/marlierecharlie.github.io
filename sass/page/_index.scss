@@ -219,41 +219,34 @@
           justify-content: center;
           flex-direction: column;
           color: white;
+          h2 {
+            font-size: 1.5em;
+        }
 
-          article {
-            font-size: 1.2em;
-            text-align: justify;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-          }
-
-          #cv {
-            h2 {
-              font-size: 1.5em;
-            }
-
-            #corps {
-              display: flex;
-            }
-          }
+        article {
+          font-size: 1.2em;
+          text-align: justify;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
         }
       }
-
     }
-
-
-
-
-
-
-    .swiper-button-prev:hover {
-      color: #69f0ae;
-      transition: all linear 0.3s;
-    }
-
-    .swiper-button-next:hover {
-      color: #69f0ae;
-      transition: all linear 0.3s;
-    }
-
   }
 }
+
+
+
+
+
+
+.swiper-button-prev:hover {
+  color: #69f0ae;
+  transition: all linear 0.3s;
+}
+
+.swiper-button-next:hover {
+  color: #69f0ae;
+  transition: all linear 0.3s;
+}
+
+
