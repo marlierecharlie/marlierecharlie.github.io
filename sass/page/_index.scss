@@ -279,6 +279,15 @@
         color: white;
         margin-bottom: 10px;
       }
+
+      .grid{
+        display: grid;
+
+        ul{
+          list-style-type: none;
+          
+        }
+      }
     }
   }
 }
