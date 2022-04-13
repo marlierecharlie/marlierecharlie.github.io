@@ -51,9 +51,10 @@
 
     <main id="mainIndex">
 
-
+        <div id="grosTitre">
         <h2 id="bienvenueTitre">Présentation</h2>
-
+        <a href="cv_inte-web_Marliere.pdf" target="_blank">télecharger mon cv</a>
+        </div>
 
         <!-- Slider main container -->
         <div class="swiper">
@@ -119,12 +120,29 @@
 
                         </section>
                 </div>
-                <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?);">
-                    <h2>hello</h2>
+                <div class="swiper-slide" id="competences">
+                    <h2>Compétences</h2>
+
+                    <div id="competencesDeveloppement">
+    
+                       <h3>Langages</h3>
+                        <ul>
+                            <li><img src="img/file_type_html_icon_130541.png" alt="logo html"></li>
+                            <li><img src="img/file_type_css_icon_130661.png" alt="logo css"></li>
+                            <li><img src="img/file_type_js_official_icon_130509.png" alt="logo js"></li>
+                        </ul>
+                    </div>
+
+                    <div id="competencesgraphisme">
+                        <img src="img/figma_macos_bigsur_icon_190183.png" alt="logo figma">
+                    </div>
+
+                    <div id="competencesLangues">
+                        <h3>Langue</h3>
+                        <p>Anglais (B2)</p>
+                    </div>
                 </div>
-                <div class="swiper-slide" style="background-image: url(https://source.unsplash.com/random?sig=3);">
-                    <h2>hello</h2>
-                </div>
+    
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -137,6 +155,32 @@
             <div class="swiper-scrollbar"></div>
         </div>
 
+        <div class="gridTravaux">
+            <h2 id="titreTravaux">Travaux</h2>
+
+            <section class="grid">
+                <ul>
+                    <li><a href="#"><img></img></a></li>
+                    <li><a href="#"><img></img></a></li>
+                    <li><a href="#"><img></img></a></li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="contact">
+
+            <h2 class="titreContact">Contact</h2>
+
+            <p>Un projet, une question, envie d'écganger? </p>
+            <p class="contactMeCallToAction">Contactez-moi!</p>
+
+            <ul>
+                <li><a href="#"><img src="img/discord_macos_bigsur_icon_190238.png" alt="logo discord"></a></li>
+                <li><a href="#"><img src="img/github_logo_icon_147285.png" alt="logo linkedin"></a></li>
+                <li><a href="#"><img src="img/linkedin_icon-icons.com_53609.png" alt="logo gitHub"></a></li>
+            </ul>
+
+        </section>
     </main>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
