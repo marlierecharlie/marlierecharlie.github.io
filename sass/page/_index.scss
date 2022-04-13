@@ -285,7 +285,12 @@
 
         ul{
           list-style-type: none;
-          
+
+          .miniature{
+            width: 10px;
+            height: 10px;
+
+          }
         }
       }
     }
