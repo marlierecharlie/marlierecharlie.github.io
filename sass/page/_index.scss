@@ -285,7 +285,7 @@
 
 
 
-      ul {
+      .gridTravaux1 {
         list-style-type: none;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -299,11 +299,14 @@
           object-fit: cover;
           border-radius: 15px;
 
-          
+
         }
+
         &:hover {
-            .miniature{ filter: blur(2px);}
+          .miniature {
+            filter: blur(2px);
           }
+        }
 
 
       }
@@ -313,6 +316,26 @@
         font-size: 3.5em;
         color: white;
         margin-bottom: 10px;
+      }
+
+      .texteContact {
+
+        margin-top: 40px;
+
+        p {
+          color: white;
+        }
+
+        .contactMeCallToAction {
+          font-size: 1.5em;
+        }
+
+        .gridReseaux{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          list-style-type : none;
+          padding-left: 0px;
+        }
       }
     }
   }
