@@ -188,22 +188,23 @@
       padding-right: 200px;
       padding-bottom: 100px;
 
-      #grosTitre{
+      #grosTitre {
 
         display: flex;
         justify-content: space-between;
 
-      #bienvenueTitre {
-        font-size: 3.5em;
-        color: white;
-        margin-bottom: 10px;
+        #bienvenueTitre {
+          font-size: 3.5em;
+          color: white;
+          margin-bottom: 10px;
+        }
+
+        a {
+          align-self: flex-end;
+          color: white;
+        }
       }
 
-      a{
-        align-self: flex-end;
-        color: white;
-      }
-}
       .swiper {
         width: 100%;
 
@@ -233,39 +234,41 @@
             margin-right: 45px;
           }
 
-          #formations{
+          #formations {
             margin: 45px;
             text-align: justify;
             width: 40%;
           }
 
-          #experiences{
+          #experiences {
             text-align: justify;
             width: 40%;
           }
 
-          #competencesDeveloppement
-          {
+          #competencesDeveloppement {
             display: flex;
             justify-content: space-between;
 
-            h3{
+            h3 {
               align-self: center;
             }
-            ul{
+
+            ul {
               list-style-type: none;
               display: flex;
               gap: 40px;
             }
           }
-          #competencesgraphisme{
+
+          #competencesgraphisme {
             margin: 50px;
-            p{
+
+            p {
               align-self: flex-end;
             }
           }
-          #competencesLangues
-          {
+
+          #competencesLangues {
             display: flex;
             align-items: center;
             gap: 30px;
@@ -274,24 +277,42 @@
         }
       }
 
-      #titreTravaux{
+      #titreTravaux {
         font-size: 3.5em;
         color: white;
         margin-bottom: 10px;
       }
 
-      .grid{
+
+
+      ul {
+        list-style-type: none;
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        padding-left: 0px;
+        margin-top: 50px;
 
-        ul{
-          list-style-type: none;
+        .miniature {
+          width: 400px;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 15px;
 
-          .miniature{
-            width: 10px;
-            height: 10px;
-
-          }
+          
         }
+        &:hover {
+            .miniature{ filter: blur(2px);}
+          }
+
+
+      }
+
+
+      .titreContact {
+        font-size: 3.5em;
+        color: white;
+        margin-bottom: 10px;
       }
     }
   }
