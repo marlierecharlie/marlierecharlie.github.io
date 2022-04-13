@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  // margin: 0;
+  // padding: 0;
   font-family: 'Poppins';
   scroll-behavior: smooth;
   box-sizing: content-box;
@@ -219,15 +219,59 @@
           justify-content: center;
           flex-direction: column;
           color: white;
+
           h2 {
             font-size: 1.5em;
-        }
+            position: absolute;
+            top: 12%;
+          }
 
-        article {
-          font-size: 1.2em;
-          text-align: justify;
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
+          article {
+            font-size: 1.2em;
+            text-align: justify;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 45px;
+            margin-right: 45px;
+          }
+
+          #formations{
+            margin: 45px;
+            text-align: justify;
+            width: 40%;
+          }
+
+          #experiences{
+            text-align: justify;
+            width: 40%;
+          }
+
+          #competencesDeveloppement
+          {
+            display: flex;
+            justify-content: space-between;
+
+            h3{
+              align-self: center;
+            }
+            ul{
+              list-style-type: none;
+              display: flex;
+              gap: 40px;
+            }
+          }
+          #competencesgraphisme{
+            margin: 50px;
+            p{
+              align-self: flex-end;
+            }
+          }
+          #competencesLangues
+          {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+          }
+
         }
       }
     }
@@ -240,13 +284,11 @@
 
 
 .swiper-button-prev:hover {
-  color: #69f0ae;
+  color: #f2f8f5;
   transition: all linear 0.3s;
 }
 
 .swiper-button-next:hover {
-  color: #69f0ae;
+  color: #f2f8f5;
   transition: all linear 0.3s;
 }
-
-
